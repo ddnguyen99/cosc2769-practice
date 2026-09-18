@@ -1,0 +1,6 @@
+---
+- hosts: dockerserver
+
+  tasks:
+  - name: create docker container by using the image on Dockerhub
+    command: docker run -d --name week8-app -p 8083:8080 ddnguyen99/helloworld:week8
